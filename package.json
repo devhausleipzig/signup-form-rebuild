@@ -1,0 +1,13 @@
+{
+  "name": "signup-form-prototype",
+  "version": "1.0.0",
+  "author": "Gabriel Heinrich <gabriel@devhausleipzig.de>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel serve -p 8080 index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2",
+    "@parcel/transformer-sass": "2.0.0-beta.2"
+  }
+}
