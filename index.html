@@ -4,11 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Login</title>
   <script src="src/index.ts" defer></script>
   <link rel="stylesheet" href="styles/style.scss">
 </head>
 <body>
- 
+  <div class="signup-form-container">
+    <div class="signup-form">
+      <h1>Typeform</h1>
+      <div><form>
+        <div class="form-group">
+          <label for="email" placeholder="bruce@wayne.com">Email</label>
+          <input type="text" name="email" id="email" autocomplete="email">
+          <p class="error-message" id="email-invalid">Please enter a valid email address</p>
+        </div>
+        <div class="form-group">
+          <label for="password" placeholder="bruce@wayne.com">Password</label>
+          <input type="password" name="password" id="password" autocomplete="current-password">
+          <p class="error-message" id="password-invalid">Your password must be between 8 and 128 characters long</p>
+        </div>
+        <div class="form-group checkbox">
+          <input type="checkbox" name="terms" id="terms">
+          <label for="terms">I agree to Typeform’s Terms of Service</label>
+        </div>
+        <div class="form-group checkbox">
+          <input type="checkbox" name="privacy-policy" id="privacy-policy">
+          <label for="privacy-policy">I accept Typeform's use of my data for the service and everything else described in the Privacy Policy</label>
+        </div>
+        <p class="error-message" id="terms-and-privacy-required">You need to accept our Terms of Service and Privacy Policy to create a Typeform account. See options to change your preferences</p>
+        <div class="form-group actions">
+          <input type="submit" value="Create my free account">
+        </div>
+      </form></div>
+    </div>
+  </div>
 </body>
 </html>
